@@ -1,0 +1,15 @@
+<h1>Hi, <%= @user.name %> <%= @user.surname %></h1>
+<h1>Your account information is below:</h1>
+<h2> Street Address: <%= @user.address %> </h2>
+<h2> City: <%= @user.city %> </h2>
+<h2> State: <%= @user.state %> </h2>
+<h2> Postal Code:<%= @user.postalcode %> </h2>
+<h2> Country: <%= @user.country %> </h2>
+<h2> Email: <%= @user.email %> </h2>
+<br>
+<br>
+<h2>Add a new phone number:</h2>
+<form action="addphonenum" method="post">
+  <input type="text" name="phonenumber" placeholder="(XXX)XXX-XXXX">
+  <input type="submit" name="" value="Submit">
+</form>
